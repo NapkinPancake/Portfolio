@@ -7,15 +7,98 @@
 
     font-weight: 500;
     font-size: 18px;
-    color:#006a39;
-
-
-    
+    color:white;
 
     &:hover {
         transition: 500ms;
         background-color: #006a39;
         color:white;
 
+    }
+}
+
+.sumbit-button {
+    display: inline-block;
+    
+    margin: 25px;
+    padding: 10px 60px;
+    font-size: 22px;
+    color: @black;
+
+    border: 3px solid @white;
+    background-color: @dark-green;
+    color:@white;
+
+    cursor: pointer;
+
+
+    transition: 600ms;
+
+    &:hover {
+        background-color: @white;
+        color:@black;
+
+    }
+}
+
+
+.close-button {
+    right: 32px;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+
+    transition: 200ms;
+    
+    &:hover {
+    opacity: 0.5;
+    }
+    &:before, &:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: white;
+    }
+    &:before {
+    transform: rotate(45deg);
+    }
+    &:after {
+    transform: rotate(-45deg);
+    }
+}
+
+.close-button-sm {
+    position: relative;
+    width: 16px;
+    height: 16px;
+
+    transition: 500ms;
+    
+    &:hover {
+    opacity: 0.5;
+    }
+    &:before, &:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 18px;
+    width: 2px;
+    background-color: white;
+    }
+    &:before {
+    transform: rotate(90deg);
+    }
+}
+
+.close-button-sm--active {
+    .close-button-sm {
+        &:hover::before {
+            transform: rotate(135deg);
+        }
+        &:hover::after {
+            transform: rotate(45deg);
+        }
     }
 }

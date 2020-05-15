@@ -1,18 +1,33 @@
 <template>
-  <div class="coloboration-block">
+  <div class="coloboration-block" data-aos="flip-left" data-aos-duration="800">
     <div class="coloboration-block__content">
       <div class="coloboration-block__column">
         <h3>Start a project</h3>
       </div>
       <div class="coloboration-block__column">
-        <p>Interested in working together? We should queue up a chat. I’ll buy the coffee.</p>
+        <p>Interested in working together? I am always avaliable in UpWork chats</p>
       </div>
       <div class="coloboration-block__column">
-        <a href="#">Lets do this</a>
+        <a href="https://www.upwork.com/freelancers/~015bd39d04fe729afe" target="_blank">My UpWork</a>
       </div>
     </div>
   </div>
 </template>
+<script>
+
+export default {
+  methods: {
+    showContactForm() {
+      this.$modal.show("contact-form");
+      console.log("clicked");
+    },
+    hideContactForm() {
+      this.$modal.hide("contact-form");
+    }
+  },
+ 
+};
+</script>
 
 <style lang="less">
 @import url(../variables.less);
@@ -22,7 +37,7 @@
   display: flex;
   justify-content: center;
 
-  margin-bottom:-110px;
+  margin-bottom: -110px;
 }
 .coloboration-block__content {
   display: flex;
@@ -56,5 +71,4 @@
     flex-basis: 370px;
   }
 }
-
 </style>

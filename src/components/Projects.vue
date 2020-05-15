@@ -3,34 +3,34 @@
     <div class="projects-block__text">
       <h2>My recent works</h2>
       <p>
-        Here are a few design projects I've worked on recently. Want to see more?
-        <a
-          href="#"
-        >Email me.</a>
+        Here are a few projects I've worked on recently. Want to see more?
+        <a v-on:click="openContactSidebar()">Email me.</a>
       </p>
     </div>
     <div class="projects-block__projects-cards">
-      <div class="projects-cards__elem">
+      <div class="projects-cards__elem" data-aos="zoom-out-right" data-aos-duration="1200">
         <div class="projects-cards__elem--content">
-          <p>I created this when I was 4 years old. Thats my first</p>
-          <a href="#">View</a>
+          <p>This is temlate for russian Barbershop website</p>
+          <a >View</a>
         </div>
       </div>
-      <div class="projects-cards__elem">
+      <div class="projects-cards__elem" data-aos="zoom-out-up" data-aos-duration="1200">
         <div class="projects-cards__elem--content">
-          <p>I created this when I was 4 years old. Thats my first</p>
-          <a href="#">View</a>
+          <p>I designed and coded simple and atractive design for German company site</p>
+          <a>View</a>
         </div>
       </div>
-      <div class="projects-cards__elem">
+      <div class="projects-cards__elem" data-aos="zoom-out-right" data-aos-duration="1200">
         <div class="projects-cards__elem--content">
-          <p>I created this when I was 4 years old. Thats my first</p>
-          <a href="#">View</a>
+          <p>On Process...</p>
         </div>
       </div>
     </div>
+
+
   </div>
 </template>
+
 
 <style lang="less">
 @import url(../variables.less);
@@ -53,7 +53,7 @@
 
   & a {
     text-decoration: none;
-    color:@dark-green;
+    color: @dark-green;
     font-weight: 600;
   }
 }
@@ -78,21 +78,30 @@
   border-radius: 10px;
   color: white;
 
-  background: url(../../src/img/barbershop.jpg);
+  background: url(../img/barbershop.jpg);
   background-size: cover;
+
+  &:nth-child(2) {
+    background: url(../img/kosmo.png);
+    background-size: cover;
+  }
+  &:nth-child(3) {
+    background: url(../img/backery.png);
+    background-size: cover;
+  }
 
   &:hover {
     transition: 1200ms;
     background: @black;
     .projects-cards__elem--content {
-        opacity: 1;
+      opacity: 1;
     }
   }
 }
 
 .projects-cards__elem--content {
   opacity: 0;
-  
+
   font-weight: 500;
 }
 

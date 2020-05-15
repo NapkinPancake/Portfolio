@@ -21,12 +21,39 @@
     font-weight: bold;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+@font-face {
+    font-family: 'Quicksand', sans-serif;
+    src: url(/fonts/Quicksand-Medium.ttf) format("truetype");
+
+    font-style: normal; 
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Quicksand', sans-serif;
+    src: url(/fonts/Quicksand-SemiBold.ttf) format("truetype");
+
+    font-style: normal; 
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Quicksand', sans-serif;
+    src: url(/fonts/Quicksand-Bold.ttf) format("truetype");
+
+    font-style: normal; 
+    font-weight: 700;
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     letter-spacing: 0px;
-    font-weight: 400;
+    font-weight: 500;
 
     background-color: #f4f4f4;
 
-
 }
+
+html {
+    scroll-behavior: smooth;
+  }

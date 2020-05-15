@@ -1,45 +1,39 @@
 <template>
-  <div class="tools-block">
-    <div class="tools-block__column">
-      <i class="fas fa-pencil-ruler fa-3x"></i>
+  <div class="tools-block" >
+    <div class="tools-block__column" data-aos="fade-right" data-aos-duration="700">
+      <i class="fas fa-pencil-ruler fa-3x" data-aos="flip-left" data-aos-duration="900"></i>
       <h3>Designer</h3>
-      <p>I value simple content structure, clean design patterns, and thoughtful interactions.</p>
-      <b>Languages I speak:</b>
-      <p>HTML, Pug, Slim, CSS, Sass, Less</p>
+      <p>I am gladly take a part in the editing, but rarely create my own designs </p>
+      <b>Things I enjoy working with:</b>
+      <p>UI, Landing Pages</p>
       <b>Design Tools:</b>
-      <p>
-        Balsamiq Mockups
-        Figma
-        Invision
-        Marvel
-      </p>
+      <p>Photoshop</p>
+      <p>Illustrator</p>
     </div>
-    <div class="tools-block__column">
-      <i class="fas fa-laptop-code fa-3x"></i>
+    <div class="tools-block__column" data-aos="fade-up" data-aos-duration="600">
+      <i class="fas fa-laptop-code fa-3x" data-aos="flip-left" data-aos-duration="1200"></i>
       <h3>Front-end Developer</h3>
-      <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
+      <p>This one is my passion. I like to code things from scratch, and enjoy bringing ideas into life in the browser.</p>
       <b>Languages I speak:</b>
-      <p>HTML, Pug, Slim, CSS, Sass, Less</p>
+      <p>HTML, CSS, JS</p>
       <b>Dev Tools:</b>
-      <p>
-        Atom
-        Bitbucket
-        Bootstrap
-        Bulma
-      </p>
+      <p>Vue.js</p>
+      <p>jQuery</p>
+      <p>Bootstrap</p>
+      <p>LESS</p>
+      <p>VS Code</p>
     </div>
-    <div class="tools-block__column">
-      <i class="fas fa-server fa-3x"></i>
+    <div class="tools-block__column" data-aos="fade-left" data-aos-duration="700">
+      <i class="fas fa-server fa-3x" data-aos="flip-left" data-aos-duration="1400"></i>
       <h3>Back-end Developer</h3>
-      <p>I genuinely care about people, and love helping fellow designers work on their craft.</p>
-      <b>Experiences I draw from:</b>
-      <p>UX/UI, Product design, Freelancing</p>
-      <b>Mentor Stats:</b>
-      <p>
-        4.5 years experience
-        26 short courses
-        40 bootcamps
-      </p>
+      <p>I have also got an experience as Back-end developer, so I easily collaborate with people who works with a server part</p>
+      <b>Languages I used to work with:</b>
+      <p>PHP, SQL</p>
+      <b>Tools I have used:</b>
+      <p>Laravel</p>
+      <p>MySQL</p>
+      <p>PHP My Admin</p>
+      <p>GIT</p>
     </div>
   </div>
 </template>
@@ -86,15 +80,17 @@
   }
 
   & p {
-    margin-bottom: 50px;
+    margin-bottom: 0;
     font-size: 18px;
   }
   & b {
+    padding-top: 20px;
+    display: block;
     font-size: 18px;
     color: @dark-green;
   }
   & i {
-      color:@dark-green;
+    color: @dark-green;
   }
 }
 

@@ -8,18 +8,18 @@
     </div>
     <div class="main-footer__networks">
       <div class="networks__elem">
-        <a href="#">
+        <a href="https://www.facebook.com/zavodnoi.baklazan/" target="_blank">
           <i class="fab fa-facebook-f fa-lg"></i>
         </a>
       </div>
       <div class="networks__elem">
-        <a href="#">
+        <a href="https://web.telegram.org/#/im?p=@Agallore" target="_blank">
           <i class="fab fa-telegram-plane fa-lg"></i>
         </a>
       </div>
       <div class="networks__elem">
-        <a href="#">
-          <i class="fab fa-linkedin-in fa-lg"></i>
+        <a href="https://github.com/NapkinPancake" target="_blank">
+          <i class="fab fab fa-github fa-lg"></i>
         </a>
       </div>
     </div>
@@ -27,6 +27,8 @@
       <p>Handcrafted by me</p>
     </div>
   </div>
+
+  
 </template>
 
 <style lang="less">
@@ -41,7 +43,6 @@
 
   padding: 40px;
   padding-top: 150px;
-  padding-bottom: 100px;
 
   background-color: @dark-green;
   color: @white;
@@ -66,7 +67,7 @@
   display: flex;
   flex-wrap: wrap;
 
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .networks__elem {
