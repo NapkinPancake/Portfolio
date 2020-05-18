@@ -1,7 +1,7 @@
 <template>
   <div class="tools-block" >
     <div class="tools-block__column" data-aos="fade-right" data-aos-duration="700">
-      <i class="fas fa-pencil-ruler fa-3x" data-aos="flip-left" data-aos-duration="900"></i>
+      <i class="fas fa-pencil-ruler fa-3x"></i>
       <h3>Designer</h3>
       <p>I am gladly take a part in the editing, but rarely create my own designs </p>
       <b>Things I enjoy working with:</b>
@@ -11,7 +11,7 @@
       <p>Illustrator</p>
     </div>
     <div class="tools-block__column" data-aos="fade-up" data-aos-duration="600">
-      <i class="fas fa-laptop-code fa-3x" data-aos="flip-left" data-aos-duration="1200"></i>
+      <i class="fas fa-laptop-code fa-3x" ></i>
       <h3>Front-end Developer</h3>
       <p>This one is my passion. I like to code things from scratch, and enjoy bringing ideas into life in the browser.</p>
       <b>Languages I speak:</b>
@@ -24,7 +24,7 @@
       <p>VS Code</p>
     </div>
     <div class="tools-block__column" data-aos="fade-left" data-aos-duration="700">
-      <i class="fas fa-server fa-3x" data-aos="flip-left" data-aos-duration="1400"></i>
+      <i class="fas fa-server fa-3x" ></i>
       <h3>Back-end Developer</h3>
       <p>I have also got an experience as Back-end developer, so I easily collaborate with people who works with a server part</p>
       <b>Languages I used to work with:</b>
@@ -91,6 +91,13 @@
   }
   & i {
     color: @dark-green;
+    transition: all 200ms;
+
+    transition: all 200ms;
+
+    &:hover {
+      transform: rotateY(180deg);
+    }
   }
 }
 

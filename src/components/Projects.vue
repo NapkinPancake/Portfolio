@@ -4,14 +4,16 @@
       <h2>My recent works</h2>
       <p>
         Here are a few projects I've worked on recently. Want to see more?
-        <a v-on:click="openContactSidebar()">Email me.</a>
+        <a
+          v-on:click="openContactSidebar()"
+        >Email me.</a>
       </p>
     </div>
     <div class="projects-block__projects-cards">
       <div class="projects-cards__elem" data-aos="zoom-out-right" data-aos-duration="1200">
         <div class="projects-cards__elem--content">
           <p>This is temlate for russian Barbershop website</p>
-          <a >View</a>
+          <a>View</a>
         </div>
       </div>
       <div class="projects-cards__elem" data-aos="zoom-out-up" data-aos-duration="1200">
@@ -26,8 +28,6 @@
         </div>
       </div>
     </div>
-
-
   </div>
 </template>
 
@@ -73,13 +73,16 @@
   margin: 10px;
   padding: 40px 25px;
 
-  background-color: whitesmoke;
   border: 2px solid black;
   border-radius: 10px;
   color: white;
 
+  background-color: black;
   background: url(../img/barbershop.jpg);
   background-size: cover;
+
+
+
 
   &:nth-child(2) {
     background: url(../img/kosmo.png);
@@ -90,11 +93,12 @@
     background-size: cover;
   }
 
+  
   &:hover {
-    transition: 1200ms;
-    background: @black;
-    .projects-cards__elem--content {
+    background:  @black;
+     .projects-cards__elem--content {
       opacity: 1;
+      transition: 990ms
     }
   }
 }
@@ -103,6 +107,7 @@
   opacity: 0;
 
   font-weight: 500;
+
 }
 
 .projects-cards__elem--content a {

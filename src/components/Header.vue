@@ -1,6 +1,6 @@
 <template>
   <header class="main-header" id="contactForm">
-    <div class="navbar-menu" data-aos="zoom-out-right" data-aos-duration="1000">
+    <div class="navbar-menu" >
       <div>
         <div class="menu-item">
           <p v-on:click="openFaqsSidebar()">FAQS</p>
@@ -11,7 +11,7 @@
       </div>
     </div>
     <div class="navbar-tree-icon"></div>
-    <div class="navbar-button" data-aos="zoom-out-left" data-aos-duration="1000">
+    <div class="navbar-button" >
       <a
         href="https://www.upwork.com/freelancers/~015bd39d04fe729afe "
         class="navbar-button"

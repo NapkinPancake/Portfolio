@@ -1,16 +1,16 @@
 <template>
-  <div class="front-block" data-aos="fade-up" data-aos-duration="1000">
+  <div class="front-block" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1200">
     <div class="front-block__info">
       <h1 v-on:click="roundIcon()" el="header">Front-End Developer</h1>
       <p>I design and code beautifully simple things, and I love what I do.</p>
     </div>
-    <div class="front-block__avatar">
-      <img src="../img/avatar.png" alt />
+    <div class="front-block__avatar ">
+      <img src="../img/avatar.svg" alt />
     </div>
     <div class="front-block__flying-icons">
       <div class="front-block__flying-icons-wrap">
         <div class="flying-icons__block">
-          <div class="flying-icons__elem">
+          <div class="flying-icons__elem ">
             <img src="../img/css-black-logo.png" alt />
           </div>
         </div>
@@ -19,7 +19,7 @@
             <img src="../img/html-black-logo.png" alt />
           </div>
         </div>
-           <div class="flying-icons__block">
+        <div class="flying-icons__block">
           <div class="flying-icons__elem">
             <img src="../img/js-black-logo.png" alt />
           </div>
@@ -37,6 +37,7 @@
 
 
 <script>
+
 export default {
   data() {
     return {
@@ -84,6 +85,10 @@ export default {
 
 .front-block__avatar {
   margin-top: 70px;
+
+  & img {
+    width: 230px;
+  }
 }
 .front-block__flying-icons-wrap {
   height: 520px;

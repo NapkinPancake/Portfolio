@@ -1,13 +1,14 @@
 <template>
   <div id="App">
-    <div class="container-fluid">
-      <app-header/>
-      <app-tree/>
-      <app-achievements/>
-      <app-tools/>
-      <app-projects/>
-      <app-coloboration/>
-      <app-footer/>
+    <div class="container-fluid" >
+      <app-preloader />
+      <app-header />
+      <app-tree />
+      <app-achievements />
+      <app-tools />
+      <app-projects />
+      <app-coloboration />
+      <app-footer />
     </div>
   </div>
 </template>

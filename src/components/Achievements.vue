@@ -1,5 +1,5 @@
 <template>
-  <div class="achievements" id="achievements" data-aos="fade-up" >
+  <div class="achievements" id="achievements" data-aos="fade-up">
     <div class="achievements__text">
       <h2>Hi, I’m Andrew. Nice to meet you!</h2>
       <p>
@@ -13,27 +13,27 @@
     </div>
     <div class="achievements__icons">
       <div class="icons__elem">
-        <img src="../img/fast-icon.png" alt="" data-aos="flip-up" data-aos-duration="900">
+        <img src="../img/fast-icon.png" />
         <p>FAST</p>
       </div>
       <div class="icons__elem">
-        <img src="../img/responsive-icon.png" alt="">
+        <img src="../img/responsive-icon.png" alt />
         <p>Responsive</p>
       </div>
       <div class="icons__elem">
-        <img src="../img/quarantee-icon.png" alt="" data-aos="flip-up" data-aos-duration="900">
+        <img src="../img/quarantee-icon.png" />
         <p>Qualitive</p>
       </div>
       <div class="icons__elem">
-        <img src="../img/clean-code-icon.png" alt="">
+        <img src="../img/clean-code-icon.png" alt />
         <p>Clean Code</p>
       </div>
       <div class="icons__elem">
-        <img src="../img/fast-icon.png" alt="" data-aos="flip-up" data-aos-duration="900">
+        <img src="../img/fast-icon.png" />
         <p>FAST</p>
       </div>
       <div class="icons__elem">
-        <img src="../img/responsive-icon.png" alt="">
+        <img src="../img/responsive-icon.png" alt />
         <p>Responsive</p>
       </div>
     </div>
@@ -67,7 +67,6 @@ export default {
 }
 
 .achievements__text {
-
   text-align: center;
 
   & h2 {
@@ -100,9 +99,16 @@ export default {
   height: 120px;
   width: 160px;
 
+  transition: all 420ms;
+
+  &:hover {
+    scale: 1.2;
+  }
+
   & img {
     width: 60px;
-    filter:invert(1);
+
+    filter: invert(1);
   }
 }
 @media (min-width: @laptop-width) {

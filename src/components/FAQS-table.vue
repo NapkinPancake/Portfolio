@@ -1,27 +1,19 @@
 <template>
   <div class="content__FAQS-table">
     <img src="../img/faq-icon.png" alt />
-    <div class="FAQS-table__elem">
-      <div class="FAQS-table__elem-header" data-toggle="collapse" data-target="#collapseOne">
-        <h5>Are you available to take on new work?</h5>
-        <span class="close-button-sm"></span>
-      </div>
-      <div id="collapseOne" class="collapse show FAQS-table__elem-content">
-        <p>Yes, I have got no active projects at the moment</p>
-      </div>
-    </div>
+    
     <div class="FAQS-table__elem">
       <div class="FAQS-table__elem-header" data-toggle="collapse" data-target="#collapseTwo">
         <h5>How much time are you able to work?</h5>
         <span class="close-button-sm"></span>
       </div>
-      <div class="FAQS-table__elem-content collapse" id="collapseTwo">
+      <div class="FAQS-table__elem-content collapse  show " id="collapseTwo">
         <p>I am usually available more than 30 hours a week</p>
       </div>
     </div>
     <div class="FAQS-table__elem">
       <div class="FAQS-table__elem-header" data-toggle="collapse" data-target="#collapseThree">
-        <h5>Do you take up full-stack work?</h5>
+        <h5>Do you take up full-stack projects?</h5>
         <span class="close-button-sm"></span>
       </div>
       <div class="FAQS-table__elem-content collapse" id="collapseThree">
@@ -48,6 +40,15 @@
       </div>
       <div class="FAQS-table__elem-content collapse" id="collapseFive">
         <p>I work for both</p>
+      </div>
+    </div>
+    <div class="FAQS-table__elem">
+      <div class="FAQS-table__elem-header" data-toggle="collapse" data-target="#collapseOne">
+        <h5>Are you realy look like your curly avatar?!</h5>
+        <span class="close-button-sm"></span>
+      </div>
+      <div id="collapseOne" class="collapse FAQS-table__elem-content">
+        <p>Yeap. That is actualy how I look like</p>
       </div>
     </div>
   </div>
