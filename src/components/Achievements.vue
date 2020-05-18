@@ -14,7 +14,7 @@
     <div class="achievements__icons">
       <div class="icons__elem">
         <img src="../img/fast-icon.png" />
-        <p>FAST</p>
+        <p>Fast</p>
       </div>
       <div class="icons__elem">
         <img src="../img/responsive-icon.png" alt />
@@ -26,15 +26,15 @@
       </div>
       <div class="icons__elem">
         <img src="../img/clean-code-icon.png" alt />
-        <p>Clean Code</p>
+        <p>Clean Coded</p>
       </div>
       <div class="icons__elem">
-        <img src="../img/fast-icon.png" />
-        <p>FAST</p>
+        <img src="../img/creative-icon.png" />
+        <p>Creative</p>
       </div>
       <div class="icons__elem">
-        <img src="../img/responsive-icon.png" alt />
-        <p>Responsive</p>
+        <img src="../img/perspective-icon.png" alt />
+        <p>Perspective</p>
       </div>
     </div>
   </div>
